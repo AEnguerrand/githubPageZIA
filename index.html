@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <link href="general.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <link href="general.css" rel="stylesheet">
+        <link href="./assets/css/prettify.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Nexus Zia API</a>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Nexus Zia API</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="example.html">Example</a></li>
+                        <li><a href="https://nexus-software.github.io/NexusZiaApi/">Documentation</a></li>
+                        <li><a href="uml.html">UML</a></li>
+                        <li><a href="ressources.html">Ressources</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Like this page</a></li>
+                        <li><a href="https://github.com/Nexus-Software/NexusZiaApi/"><span><img src="github.png" /></span> View on Github</a></li>
+                        <li><a href="https://github.com/Nexus-Software/NexusZiaApi/fork"><span><img src="github.png" /></span> Fork the project</a></li>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Example</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">UML</a></li>
-                    <li><a href="#">Ressources</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Like this page</a></li>
-                    <li><a href="https://github.com/Nexus-Software/NexusZiaApi/"><span><img src="github.png"/></span> View on Github</a></li>
-                    <li><a href="https://github.com/Nexus-Software/NexusZiaApi/fork"><span><img src="github.png"/></span> Fork the project</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <div class="container-fluid">
-            <h1>Welcome in our beautiful website !</h1>
-            <p>We are currently building this page, please come back later.</p>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">Made by the Nexus Team</span>
-        </div>
-    </footer>
-</body>
+        <main>
+            <div class="container-fluid welcome">
+                <h2>La team</h2>
+                <h1>Nexus</h1>
+                <h3>vous propose son API</h3>
+                <br/>
+                <a class="btn btn-primary btn-lg" href="example.html">Start now</a>
+            </div>
+
+            <div class="row intro">
+                <div class="span4 article">
+                    <h3>Discover an implementation example</h3>
+                    <p>
+                        <a href="example.html" class="thumbnail"><img src="exampleInfo.png" alt="Discover an example"></a>
+                        Discover a simple case of implementation.
+                    </p>
+                    <p class="pull-right dicover"><a class="btn btn-primary btn-md discover" href="example.html">Discover an implementation example &raquo;</a></p>
+                </div>
+
+                <div class="span4 article">
+                    <h3>Read our complete documentation</h3>
+                    <p>
+                        <a href="https://nexus-software.github.io/NexusZiaApi/" class="thumbnail"><img src="docInfo.png" alt="Read the doc"></a>
+                        You can find here a complete documentation.
+                    </p>
+                    <p class="pull-right dicover"><a class="btn btn-primary btn-md discover" href="https://nexus-software.github.io/NexusZiaApi/">Read the doc &raquo;</a></p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted" id="align">Made by the Nexus Team</span>
+            </div>
+        </footer>
+    </body>
 </html>
